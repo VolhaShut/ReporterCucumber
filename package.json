@@ -48,12 +48,13 @@
   },
   "dependencies": {
     "minimist": "1.2.0",
-    "lodash": "4.16.6"
+    "lodash": "4.16.6",
+    "excel4node": "^1.2.1"
   },
 
   "description": "## Configuration:",
   "devDependencies": {
-    "excel4node": "^1.2.1"
+    
   },
   "engines": {
     "node": ">=4.4.2"
