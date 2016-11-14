@@ -1,0 +1,69 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "awesome-report-generator@git+https://github.com/M2JS/awesome-report-generator.git",
+        "scope": null,
+        "escapedName": "awesome-report-generator",
+        "name": "awesome-report-generator",
+        "type": "hosted"
+
+      },
+      "/home/olga/JSWork/Task2"
+    ]
+  ],
+  "_from": "git+https://github.com/M2JS/awesome-report-generator.git",
+  "_id": "awesome-report-generator@1.0.0",
+  "_inCache": true,
+  "_location": "/awesome-report-generator",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "awesome-report-generator@git+https://github.com/M2JS/awesome-report-generator.git",
+    "scope": null,
+    "escapedName": "awesome-report-generator",
+    "name": "awesome-report-generator",
+    "rawSpec": "git+https://github.com/M2JS/awesome-report-generator.git",
+    "spec": "git+https://github.com/M2JS/awesome-report-generator.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:M2JS/awesome-report-generator.git",
+      "sshUrl": "git+ssh://git@github.com/M2JS/awesome-report-generator.git",
+      "httpsUrl": "git+https://github.com/M2JS/awesome-report-generator.git",
+      "gitUrl": "git://github.com/M2JS/awesome-report-generator.git",
+      "shortcut": "github:M2JS/awesome-report-generator",
+      "directUrl": "https://raw.githubusercontent.com/M2JS/awesome-report-generator/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "git+https://github.com/M2JS/awesome-report-generator.git#e2b9d2acdfda69a7d350b77e34029e64b85a6983",
+  "_shasum": "8e9bf8496c7792918ecfc35711c76a21a867ac2a",
+  "_shrinkwrap": null,
+  "_spec": "awesome-report-generator@git+https://github.com/M2JS/awesome-report-generator.git",
+  "_where": "/home/olga/JSWork/Task2",
+  "author": {
+    "name": "M2JS"
+  },
+  "dependencies": {
+    "minimist": "1.2.0",
+    "lodash": "4.16.6"
+  },
+
+  "description": "## Configuration:",
+  "devDependencies": {
+    "excel4node": "^1.2.1"
+  },
+  "engines": {
+    "node": ">=4.4.2"
+  },
+  "gitHead": "e2b9d2acdfda69a7d350b77e34029e64b85a6983",
+  "license": "",
+  "main": "index.js",
+  "name": "awesome-report-generator",
+  "optionalDependencies": {},
+  "readme": "# awesome-report-generator\n\n## Configuration:\n\nIn order to be able to run awesome-report-generator, include the following imports to your gulpfile:\n\n```\nconst gulp = require('gulp');\n...\nrequire('awesome-report-generator')(gulp);\n```\n\n## Running awesome-report-generator:\n\n```\n$> gulp report:generate --reportConfig=path-to-report-config.json\n```\n\n## Example of report config .json file:\n\n```\n{\n  \"input\": \"./e2e/output/cucumber.json\",\n  \"output\": \"./e2e/output\",\n  \"format\":[\n    \"html\",\n    \"xlsx\"\n  ]\n}\n```\n\n| Field | Description | Possible value |\n|-------|-------------|----------------|\n| `input` | Path to standard cucumber .json tests output | |\n| `output` | Folder where generate report | |\n| `format` | format of report you want to be generated | `html` and `xlsx` |\n",
+  "readmeFilename": "README.md",
+  "version": "1.0.0"
+}
